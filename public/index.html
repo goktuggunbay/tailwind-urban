@@ -13,8 +13,8 @@
 
 </head>
 
-<body>
-  
+<body class="bg-ebony">
+
 
   <!---header -->
   <header class="bg-raisin_black py-6 lg:py-12 text-almond font-oswald uppercase transition duration-300">
@@ -30,7 +30,7 @@
 
         </div>
       </div>
-      <nav class="hidden transition-all duration-300 md:flex justify-between flex-1">
+      <nav class="hidden fade transition-all duration-300 md:flex justify-between flex-1">
         <div class="flex items-center text-lg space-x-4 lg:space-x-8 ">
           <a href="" class="text-almond  hover:text-rosy_brown transition duration-300"> fashion</a>
           <a href="" class="text-almond  hover:text-rosy_brown transition duration-300"> products</a>
@@ -59,8 +59,32 @@
   </header>
 
   <!---BF FULL CAROUSEL-->
+  <div class="relative w-auto h-96 transition-all duration-300 mx-0 lg:mx-8 py-5">
+    <img class="object-cover w-full h-96  " src="./img/bg.png" alt="">
+    <!-------carousel lr controller-->
+    <div class="absolute w-full top-1/2 h-auto px-5  z-10 flex justify-between controller">
+      <svg xmlns="http://www.w3.org/2000/svg" class=" ionicon w-14  text-red-700 cursor-pointer" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+          d="M244 400L100 256l144-144M120 256h292" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class=" ionicon w-14  text-red-700 cursor-pointer" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+          d="M268 112l144 144-144 144M392 256H100" />
+      </svg>
+    </div>
+    <!-------carousel lr controller end-->
 
+    <!-------carousel bottom controller-->
+    <div class="absolute inline-flex bottom-5 left-1/2 w-20 justify-between z-10">
 
+      <div class="w-3 h-3 bottom-5 left-1/2 bg-red-700 rounded-xl shadow-sm cursor-pointer"></div>
+      <div class="w-3 h-3 bottom-5 left-1/2 bg-white rounded-xl shadow-sm cursor-pointer"></div>
+      <div class="w-3 h-3 bottom-5 left-1/2 bg-white rounded-xl shadow-sm cursor-pointer"></div>
+
+    </div>
+    <!-------carousel bottom controller end -->
+
+  </div>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

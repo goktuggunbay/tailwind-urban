@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
+    
     container:{
       center:true,
       screens:{
@@ -12,13 +13,16 @@ module.exports = {
       }
     },
     extend: {
+      
+      backgroundImage:{
+        'hero-pattern': "url('../img/bg.png')",
+      },
+        
       fontFamily:{
         oswald:[ 'Oswald', 'sans-serif'],
         dancing: ['Dancing Script', 'cursive']
       },
-      backgroundImage:{
-        'container-bg':"[url('/images/bg.jpg')]"
-      },
+      
       colors:{
         'rosy_brown':'#c99082',
         'dim_gray' :'#6f675c',
