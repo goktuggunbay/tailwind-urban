@@ -13,7 +13,9 @@ module.exports = {
       }
     },
     extend: {
-      
+      height:{
+        '100':'26rem'
+      },
       backgroundImage:{
         'hero-pattern': "url('../img/bg.png')",
       },
