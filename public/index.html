@@ -59,15 +59,30 @@
   </header>
 
   <!---BF FULL CAROUSEL-->
-  <section class="relative w-auto h-100 transition-all duration-300 mx-0 lg:mx-5 lg:py-5">
-    <img class="object-cover w-full h-100  " src="./img/bg.png" alt="">
+  <section class="relative w-full h-128  mx-0 group group-hover:transition-all ">
+    
+    <!----Carousel Section-->
+    <div class="w-full h-128 relative group">
+      <img class="object-cover w-full h-128" src="./img/bg.png" alt="">
+      <div class="absolute bottom-0 left-0 w-full h-52 bg-gradient-to-b from-transparent to-black opacity-60 group-hover:opacity-100 z-10 transition-opacity duration-500">
+        <div class="absolute px-10 md:px-36 transition-all duration-500 ">
+          <h3 class="text-almond py-5 text-2xl uppercase font-oswald">Product Tıtle</h3>
+          <p class="text-almond text-xs md:text-lg break-words">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet rerum id exercitationem. Reiciendis, hic? Est voluptatibus et sed eum provident. Aut cupiditate tempora facere tempore omnis cumque officia. Dolorem?</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-----Carousel Section End-->
+    
+
+    
     <!-------carousel lr controller-->
-    <div class="absolute w-full top-1/2 h-auto px-5  z-10 flex justify-between controller">
-      <svg xmlns="http://www.w3.org/2000/svg" class=" ionicon w-14  text-rosy_brown  cursor-pointer" viewBox="0 0 512 512">
+    <div class="absolute w-full top-1/2 h-auto px-5  z-10 flex justify-between opacity-50 group group-hover:opacity-100 transition-all duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class=" ionicon w-14  text-rosy_brown hover:text-almond cursor-pointer duration-300" viewBox="0 0 512 512">
         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
           d="M244 400L100 256l144-144M120 256h292" />
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" class=" ionicon w-14  text-rosy_brown cursor-pointer" viewBox="0 0 512 512">
+      <svg xmlns="http://www.w3.org/2000/svg" class=" ionicon w-14 hover:text-almond text-rosy_brown cursor-pointer duration-300 " viewBox="0 0 512 512">
         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
           d="M268 112l144 144-144 144M392 256H100" />
       </svg>
@@ -83,8 +98,8 @@
 
     </div>
     <!-------carousel bottom controller end -->
-
   </section>
+  
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

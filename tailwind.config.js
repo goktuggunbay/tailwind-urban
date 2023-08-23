@@ -13,8 +13,9 @@ module.exports = {
       }
     },
     extend: {
-      height:{
-        '100':'26rem'
+      
+      spacing:{
+        '128':'32rem'
       },
       backgroundImage:{
         'hero-pattern': "url('../img/bg.png')",
